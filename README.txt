@@ -17,3 +17,9 @@ JOB QUEST SCREENSHOTS
 The Job Quest project section now includes screenshots supplied by the portfolio owner.
 The screenshots use sample/dummy records and are labelled accordingly. Images are stored in images/job-quest/.
 
+
+
+FINAL PORTFOLIO UPDATE
+- Corrected Job Quest featured card to stack the full-width screenshot, project details, and responsive gallery vertically.
+- Clicking the Job Quest hero screenshot or any gallery screenshot now opens the Job Quest GitHub repository.
+- Added the supplied Tableau Superstore sales and profitability dashboard screenshot as a dedicated project card. The card links to the owner's Tableau Public profile because a direct workbook URL was not supplied.

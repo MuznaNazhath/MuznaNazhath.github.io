@@ -17,3 +17,89 @@
 .jobquest-gallery figcaption { padding:.65rem .8rem; color:#d8d4ec; font-size:.78rem; letter-spacing:.04em; }
 @media (min-width:900px) { .jobquest-gallery { grid-template-columns:repeat(3,minmax(0,1fr)); } }
 @media (max-width:600px) { .jobquest-gallery { grid-template-columns:1fr; padding:0 1rem 1rem; } .screenshot-hint { font-size:.52rem; } }
+
+/* Final Job Quest featured layout: full-width image, then project details and gallery. */
+.project-card.project-featured {
+  display: flex !important;
+  flex-direction: column !important;
+  grid-column: 1 / -1;
+  min-width: 0;
+}
+.project-card.project-featured > .jobquest-real-image {
+  display: block !important;
+  width: 100%;
+  height: auto !important;
+  max-height: none;
+  min-height: 0;
+  overflow: hidden;
+  background: #0b1020;
+}
+.project-card.project-featured > .jobquest-real-image img {
+  display: block;
+  width: 100%;
+  height: auto !important;
+  max-height: 560px;
+  aspect-ratio: auto !important;
+  object-fit: contain !important;
+  object-position: center top;
+}
+.project-card.project-featured > .project-info {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1.5rem;
+}
+.project-card.project-featured .jobquest-gallery {
+  display: grid;
+  width: 100%;
+  box-sizing: border-box;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  padding: 0 1.5rem 1.5rem;
+}
+.project-card.project-featured .jobquest-gallery figure {
+  min-width: 0;
+  margin: 0;
+}
+.project-card.project-featured .jobquest-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  object-position: center top;
+  background: #0b1020;
+}
+.project-card.project-featured .jobquest-gallery a {
+  display: block;
+  overflow: hidden;
+}
+.project-card.project-featured .jobquest-gallery a:hover img {
+  transform: scale(1.02);
+}
+.tableau-dashboard-image {
+  display: block;
+  overflow: hidden;
+  background: #fff;
+}
+.tableau-dashboard-image img {
+  display: block;
+  width: 100%;
+  height: auto !important;
+  aspect-ratio: auto !important;
+  object-fit: contain !important;
+  object-position: center;
+}
+@media (max-width: 850px) {
+  .project-card.project-featured .jobquest-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 600px) {
+  .project-card.project-featured > .project-info {
+    padding: 1rem;
+  }
+  .project-card.project-featured .jobquest-gallery {
+    grid-template-columns: 1fr;
+    padding: 0 1rem 1rem;
+  }
+}
