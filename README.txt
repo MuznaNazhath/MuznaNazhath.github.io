@@ -11,3 +11,9 @@ Publish:
 
 CV PDFs are stored in /documents. Update these files when replacing a CV.
 Project descriptions and experience are based on the supplied project README and CVs.
+
+
+JOB QUEST SCREENSHOTS
+The Job Quest project section now includes screenshots supplied by the portfolio owner.
+The screenshots use sample/dummy records and are labelled accordingly. Images are stored in images/job-quest/.
+
