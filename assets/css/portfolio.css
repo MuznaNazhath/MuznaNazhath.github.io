@@ -15,7 +15,6 @@
 .jobquest-gallery img { display:block; width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; object-position:top center; transition:transform .35s ease; }
 .jobquest-gallery a:hover img { transform:scale(1.025); }
 .jobquest-gallery figcaption { padding:.65rem .8rem; color:#d8d4ec; font-size:.78rem; letter-spacing:.04em; }
-@media (min-width:900px) { .jobquest-gallery { grid-template-columns:repeat(3,minmax(0,1fr)); } }
 @media (max-width:600px) { .jobquest-gallery { grid-template-columns:1fr; padding:0 1rem 1rem; } .screenshot-hint { font-size:.52rem; } }
 
 /* Final Job Quest featured layout: full-width image, then project details and gallery. */
@@ -52,9 +51,9 @@
   display: grid;
   width: 100%;
   box-sizing: border-box;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
-  padding: 0 1.5rem 1.5rem;
+  padding: 1.5rem 1.5rem 0;
 }
 .project-card.project-featured .jobquest-gallery figure {
   min-width: 0;
@@ -89,17 +88,12 @@
   object-fit: contain !important;
   object-position: center;
 }
-@media (max-width: 850px) {
-  .project-card.project-featured .jobquest-gallery {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
 @media (max-width: 600px) {
   .project-card.project-featured > .project-info {
     padding: 1rem;
   }
   .project-card.project-featured .jobquest-gallery {
     grid-template-columns: 1fr;
-    padding: 0 1rem 1rem;
+    padding: 1rem 1rem 0;
   }
 }
